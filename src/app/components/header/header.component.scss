@@ -1,0 +1,39 @@
+@import '../../../styles.scss';
+
+.header-container {
+    width: 100%;
+    height: 57px;
+    background-color: $secondary;
+    color: $grey;
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+
+    // .header-title, .header-navigation, .header-user {
+
+    // }
+
+    // .header-title {
+
+    // }
+
+    .header-navigation {
+        margin: 0 auto;
+
+        .header-navigation-item {
+            display: flex;
+        }
+
+        .active-link {
+            border-bottom: 5px solid $primary;
+        }
+    }
+
+    .header-user {
+        text-align: right;
+    }
+
+    h3 {
+        padding: 12px;
+        margin: 5px;
+    }
+}

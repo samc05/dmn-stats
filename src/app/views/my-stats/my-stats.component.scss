@@ -1,0 +1,47 @@
+@import '../../../styles.scss';
+
+.summary-stats-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 20px;
+    box-sizing: border-box;
+
+    .panel {
+        text-align: center;
+        margin-right: 15px;
+        background-color: $secondary;
+        color: $grey;
+        width: 85%;
+        border-radius: 3px;
+        margin: 0 auto;
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+.my-stats-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 1581px) {
+    .my-stats-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .my-stats-container {
+        grid-template-columns: auto;
+    }
+
+    .summary-stats-container {
+        grid-template-columns: auto auto auto;
+        
+        .panel {
+            margin-top: 20px;
+        }
+    }
+}

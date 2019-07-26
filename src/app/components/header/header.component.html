@@ -1,0 +1,34 @@
+<div class="header-container">
+  <div class="header-title">
+  </div>
+
+  <div class="header-navigation">
+    <div class="header-navigation-item">
+      <!-- <a routerLink="/user/bob" routerLinkActive="active-link">
+        <h3>My Stats</h3>
+      </a>
+      <a routerLink="/user/bob" routerLinkActive="active-link">
+        <h3>Team Stats</h3>
+      </a>
+      <a routerLink="/user/bob" routerLinkActive="active-link">
+        <h3>Leaderboard</h3>
+      </a> -->
+      <h3 routerLink="/my-stats" routerLinkActive="active-link">My Stats</h3>
+      <h3 routerLink="/team-stats" routerLinkActive="active-link">Team Stats</h3>
+      <h3 routerLink="/leaderboard" routerLinkActive="active-link">Leaderboard</h3>
+    </div>
+  </div>
+
+  <div class="header-user">
+    <!-- <h3>User Name</h3> -->
+    <a href="https://wakatime.com/oauth/authorize?client_id=wRr3qANPtb9PYB8p9y5D1GLP&redirect_uri=http://localhost:4200/oauth-redirect&response_type=code&scope=email,read_logged_time,read_stats">
+      <button type="button" class="btn">
+        <div>WakaTime Login </div>
+      </button>
+
+      <!-- <button type="button" class="btn">
+        <div>Logout</div>
+      </button> -->
+    </a>
+  </div>
+</div>

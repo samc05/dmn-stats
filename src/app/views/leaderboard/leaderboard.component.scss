@@ -1,0 +1,33 @@
+@import '../../../styles.scss';
+
+.leaderboard-container {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    grid-template-columns: 200px auto;
+
+    .leaderboard-sidebar {
+        background-color: $darkgrey;
+        color: white;
+
+        .sidebar-item {
+            text-align: center;
+            border-right: 4px solid $primary;
+        }
+
+        .active-item {
+            border-right: 4px solid $secondary; 
+        }
+    }
+
+    .leaderboard-list {
+        background-color: white;
+    }
+
+    .item {
+        height: 60px;
+        padding: 10px;
+    }
+}
